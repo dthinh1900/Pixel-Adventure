@@ -4,3 +4,14 @@ Obj/
 Build/
 Logs/
 UserSettings/
+*.csproj
+*.sln
+*.unityproj
+*.booproj
+*.svd
+*.pidb
+*.user
+*.userprefs
+*.tmp
+*.log
+*.vs/
