@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,12 +8,23 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGround = true;
     private bool canDoubleJump;
-
+    
     public float coyoteTime = 0.5f;
     private float coyoteCounter;
 
     Rigidbody2D rb;
 
+    [Header("Wall")]
+    public Transform wallCheckLeft;
+    public Transform wallCheckRight;
+    public float wallCheckDistance = 0.5f;
+    public LayerMask wallLayer;
+
+    private bool isTouchingWall;
+    private int wallDirection;
+
+    public bool checkLeft;
+    public bool checkRight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,7 +47,49 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteCounter -= Time.deltaTime;
         }
+
+        CheckWall();
+        WallSlide();
     }
+
+
+    public void CheckWall()
+    {
+        checkLeft = Physics2D.Raycast(
+        wallCheckLeft.position,
+        Vector2.left,
+        wallCheckDistance,
+        wallLayer
+        );
+
+        checkRight = Physics2D.Raycast(
+            wallCheckRight.position,
+            Vector2.right,
+            wallCheckDistance,
+            wallLayer
+        );
+
+        if (checkLeft) wallDirection = -1;
+        else if (checkRight) wallDirection = 1;
+        else wallDirection = 0; 
+
+        isTouchingWall = checkLeft || checkRight;
+    }
+
+    public void WallSlide()
+    {
+        float move = Input.GetAxis("Horizontal");
+
+        bool pushingLeft = checkLeft && move < 0;
+        bool pushingRight = checkRight && move > 0;
+
+        if ((pushingLeft || pushingRight) && !isGround && rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
+        }
+    }
+
+
 
     public void CheckJump()
     {
