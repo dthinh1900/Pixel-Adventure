@@ -51,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
     public int maxHP = 5;
     int currentHP;
 
+    [Header("Gem")]
+    int gemCount = 0;
+    bool hasKey = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -242,4 +246,31 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Player Dead");
     }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Gem"))
+        {
+            gemCount++;
+            Debug.Log("Gem: " + gemCount);
+            Destroy(col.gameObject);
+        }
+        else if (col.CompareTag("Key"))
+        {
+            hasKey = true;
+            Destroy(col.gameObject);
+        }
+        else if (col.CompareTag("Door"))
+        {
+            if (hasKey)
+            {
+                WinGame();
+            }
+        }
+    }
+    void WinGame()
+    {
+        Debug.Log("YOU WIN");
+    }
 }
+
+
