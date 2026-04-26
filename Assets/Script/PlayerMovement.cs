@@ -11,14 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private bool isGround = true;
     private bool canDoubleJump;
     
-    public float coyoteTime = 0.2f;
-    private float coyoteCounter;
+    
+    
 
     Rigidbody2D rb;
 
     [Header("Wall")]
-    public Transform wallCheckLeft;
-    public Transform wallCheckRight;
+    public Transform wallCheck;
     public float wallCheckDistance = 0.5f;
     public LayerMask wallLayer;
 
@@ -29,8 +28,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouchingWall;
     private int wallDirection;
 
-    public bool checkLeft;
-    public bool checkRight;
 
     [Header("Dash")]
     public float dashSpeed = 20f;
@@ -42,47 +39,61 @@ public class PlayerMovement : MonoBehaviour
     private int maxDash = 1;
     private bool isDashing;
     private float facingDirection = 1;
+
+    [Header("Attack")]
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayer;
+    public int damage = 1;
+
+
+    [Header("Player")]
+    public int maxHP = 5;
+    int currentHP;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        currentHP = maxHP;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (isDashing) return;
+        CheckWall();       
+        WallSlide();
         Move();
         Jump();
         CheckJump();
-        CheckWall();
-        WallSlide();
-        if (isGround)
-        {
-            coyoteCounter = coyoteTime;
-        }
-        else
-        {
-            coyoteCounter -= Time.deltaTime;
-        }
         
         if (Input.GetKeyDown(KeyCode.K) && dashCount>0 && !isDashCooldown)
         {
             StartCoroutine(Dash());
-            if(!isGround)   dashCount--;
+            
         }
 
-
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            Attack();
+        }
     }
 
     public void Move()
     {
         float move = Input.GetAxis("Horizontal");
 
-        if (move > 0) facingDirection = 1;
-        else if (move < 0) facingDirection = -1;
-
+        if (move > 0)
+        {
+            facingDirection = 1;
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (move < 0)
+        {
+            facingDirection = -1;
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         float targetSpeed = move * speed;
         float accel = 8f;
 
@@ -92,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void CheckJump()
     {
-        if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocityY > 0)
+        if (Input.GetKeyUp(KeyCode.L) && rb.linearVelocityY > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.4f);
         }
@@ -103,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.L))
         {
             if (isWallSliding)
             {
@@ -112,13 +123,13 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
 
-            if (coyoteCounter>0)
+            if (isGround)
             {
-                rb.linearVelocity=new Vector2(rb.linearVelocityX,jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = true;
-                coyoteCounter = 0;
-            }                
-            else if(canDoubleJump)
+            }
+
+            else if (canDoubleJump)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = false;
@@ -133,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
             if (!isGround) 
             {
                 dashCount = maxDash;
+                canDoubleJump = true;
             }
             isGround = true;
             
@@ -148,39 +160,34 @@ public class PlayerMovement : MonoBehaviour
 
     public void CheckWall()
     {
-        checkLeft = Physics2D.Raycast(
-        wallCheckLeft.position,
-        Vector2.left,
-        wallCheckDistance,
-        wallLayer
-        );
+        Vector2 dir = new Vector2(facingDirection, 0);
 
-        checkRight = Physics2D.Raycast(
-            wallCheckRight.position,
-            Vector2.right,
+        bool hit = Physics2D.Raycast(
+            wallCheck.position,
+            dir,
             wallCheckDistance,
             wallLayer
         );
 
-        if (checkLeft) wallDirection = -1;
-        else if (checkRight) wallDirection = 1;
-        else wallDirection = 0; 
+        isTouchingWall = hit;
 
-        isTouchingWall = checkLeft || checkRight;
+        if (hit)
+            wallDirection = (int)facingDirection;
+        else
+            wallDirection = 0;
     }
 
     public void WallSlide()
     {
         float move = Input.GetAxis("Horizontal");
 
-        bool pushingLeft = checkLeft && move < 0;
-        bool pushingRight = checkRight && move > 0;
+        bool pushing = isTouchingWall && (move * facingDirection > 0);
 
-        isWallSliding = (pushingLeft || pushingRight);
+        isWallSliding = pushing;
 
-        if (isWallSliding && !isGround && rb.linearVelocityY < 0)
+        if (isWallSliding && !isGround && rb.linearVelocity.y < 0)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, -2f);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
         }
     }
 
@@ -188,6 +195,8 @@ public class PlayerMovement : MonoBehaviour
     {
         isDashCooldown = true;
         isDashing = true;
+        
+        if (!isGround) dashCount--;
 
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0;
@@ -203,4 +212,34 @@ public class PlayerMovement : MonoBehaviour
         isDashCooldown = false;
     }
 
+
+
+    public void Attack()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+        attackPoint.position,
+        attackRange,
+        enemyLayer
+        );
+
+        foreach (Collider2D enemy in hits)
+        {
+            enemy.GetComponent<Enemy>()?.TakeDamage(damage);
+        }
+    }
+
+
+    public void TakeDamage(int dmg)
+    {
+        currentHP -= dmg;
+
+        if (currentHP <= 0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Debug.Log("Player Dead");
+    }
 }
