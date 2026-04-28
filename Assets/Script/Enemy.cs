@@ -24,12 +24,12 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        if (Time.timeScale == 0f) return;
         Patrol();
     }
     public void TakeDamage(int dmg)
     {
         currentHealth -= dmg;
-
         if (currentHealth <= 0)
         {
             Die();
@@ -80,7 +80,7 @@ public class Enemy : MonoBehaviour
         
         if (col.gameObject.CompareTag("Player"))
         {
-            col.gameObject.GetComponent<PlayerMovement>()?.TakeDamage(10);
+            col.gameObject.GetComponent<PlayerMovement>()?.TakeDamage(4);
         }
     }
 }
