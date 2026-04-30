@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     // ===== COMPONENT =====
     Rigidbody2D rb;
+    Animator anim;
 
     // ===== MOVEMENT =====
     [Header("Movement")]
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayer;
     public int damage = 1;
-
+    int attackIndex = 1;
     float attackCooldown = 0.3f;
     bool canAttack = true;
 
@@ -77,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         currentHP = maxHP;
         hpBar.fillAmount = (float)currentHP / maxHP;
         gemText.text = "Gem: 0";
@@ -93,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         CheckJump();
+        anim.SetBool("Grounded", isGround);
         
         if (Input.GetKeyDown(KeyCode.K) && dashCount>0 && !isDashCooldown)
         {
@@ -110,7 +113,6 @@ public class PlayerMovement : MonoBehaviour
     public void Move()
     {
         float move = Input.GetAxis("Horizontal");
-
         if (move > 0)
         {
             facingDirection = 1;
@@ -126,14 +128,17 @@ public class PlayerMovement : MonoBehaviour
 
         float newX=Mathf.Lerp(rb.linearVelocityX, targetSpeed, accel * Time.deltaTime);
         rb.linearVelocity=new Vector2(newX, rb.linearVelocityY);
+        anim.SetFloat("AnimState", Mathf.Abs(rb.linearVelocityX));
     }
 
     public void Jump()
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
+
             if (isWallSliding)
             {
+                anim.SetTrigger("Jump");
                 rb.linearVelocity = new Vector2(-wallDirection * wallJumpForceX, wallJumpForceY);
                 isWallSliding = false;
                 return;
@@ -141,12 +146,15 @@ public class PlayerMovement : MonoBehaviour
 
             if (isGround)
             {
+                anim.SetTrigger("Jump");
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = true;
             }
 
             else if (canDoubleJump)
             {
+                anim.ResetTrigger("Jump");
+                anim.SetTrigger("Jump");
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = false;
             }
@@ -192,6 +200,13 @@ public class PlayerMovement : MonoBehaviour
 
         isWallSliding = pushing;
 
+        if (!isTouchingWall)
+        {
+            isWallSliding = false;
+        }
+
+        anim.SetBool("WallSlide", isWallSliding);
+
         if (isWallSliding && !isGround && rb.linearVelocity.y < 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
@@ -202,7 +217,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isDashCooldown = true;
         isDashing = true;
-        
+        anim.SetTrigger("Roll");
         if (!isGround) dashCount--;
 
         float originalGravity = rb.gravityScale;
@@ -222,6 +237,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Attack()
     {
+        anim.SetTrigger("Attack" + attackIndex);
+
+        attackIndex++;
+
+        if (attackIndex > 3)
+            attackIndex = 1;
         Collider2D[] hits = Physics2D.OverlapCircleAll(
         attackPoint.position,
         attackRange,
@@ -244,7 +265,7 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(int dmg)
     {
         if (!canTakeDamage) return;
-
+        anim.SetTrigger("Hurt");
         currentHP -= dmg;
         hpBar.fillAmount = (float)currentHP / maxHP;
 
@@ -265,6 +286,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Die()
     {
+        anim.SetTrigger("Death");
         OverGame();
     }
 
@@ -298,9 +320,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 dashCount = maxDash;
                 canDoubleJump = true;
+                
             }
             isGround = true;
-
+            
         }
     }
 

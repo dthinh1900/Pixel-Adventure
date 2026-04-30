@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Enemy : MonoBehaviour
     private Vector2 startPos;
     private bool movingRight = true;
 
+    [Header("Damage")]
+    public int damage = 4;
+    bool canDamage = true;
+    public float damageCooldown = 1f;
     void Start()
     {
         currentHealth = maxHealth;
@@ -75,12 +80,20 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    IEnumerator DamageCooldown()
     {
-        
-        if (col.gameObject.CompareTag("Player"))
+        canDamage = false;
+        yield return new WaitForSeconds(damageCooldown);
+        canDamage = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Player") && canDamage)
         {
-            col.gameObject.GetComponent<PlayerMovement>()?.TakeDamage(4);
+            col.GetComponent<PlayerMovement>()?.TakeDamage(damage);
+            StartCoroutine(DamageCooldown());
         }
     }
+
 }
