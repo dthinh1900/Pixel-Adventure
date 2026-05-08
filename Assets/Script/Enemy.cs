@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    Rigidbody2D rb;
+
     [Header("Stats")]
     public int maxHealth = 3;
     int currentHealth;
@@ -20,18 +22,65 @@ public class Enemy : MonoBehaviour
 
     [Header("Damage")]
     public int damage = 4;
-    bool canDamage = true;
-    public float damageCooldown = 1f;
+    
+
+    [Header("Track")]
+    public float trackRange = 4f;
+    public float trackSpeed = 4f;
+    bool isCoolingDown = false;
+
+    public float attackCooldown = 2f;
+
+    [Header("Attack")]
+    public Transform attackPoint;
+    public float attackRange = 1f;
+    public LayerMask playerLayer;
+
+    Animator anim;
+    Transform player;
     void Start()
     {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
         startPos = transform.position;
     }
     void Update()
     {
-        if (Time.timeScale == 0f) return;
-        Patrol();
+        float distance = Vector2.Distance(transform.position, player.position);
+
+        if (distance <= attackRange)
+        {
+            Attack();
+        }
+        else if (distance <= trackRange)
+        {
+            TrackPlayer();
+        }
+        else
+        {
+            Patrol();
+        }
     }
+
+    public void TrackPlayer()
+    {
+        anim.Play("Track");
+        
+        float dirX = player.position.x > transform.position.x ? 1 : -1;
+
+        Vector2 nextPos = rb.position + Vector2.right * dirX * trackSpeed * Time.deltaTime;
+
+        if (nextPos.x >= startPos.x - moveDistance &&
+            nextPos.x <= startPos.x + moveDistance)
+        {
+            rb.MovePosition(nextPos);
+        }
+
+        Flip((int)dirX);
+    }
+
     public void TakeDamage(int dmg)
     {
         currentHealth -= dmg;
@@ -42,11 +91,13 @@ public class Enemy : MonoBehaviour
     }
     public void Patrol()
     {
+        anim.Play("Walk");
+        
         if (movingRight)
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            rb.MovePosition(rb.position + Vector2.right * speed * Time.deltaTime);
 
-            if (transform.position.x >= startPos.x + moveDistance)
+            if (rb.position.x >= startPos.x + moveDistance)
             {
                 movingRight = false;
                 Flip(-1);
@@ -54,9 +105,9 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            rb.MovePosition(rb.position + Vector2.left * speed * Time.deltaTime);            
 
-            if (transform.position.x <= startPos.x - moveDistance)
+            if (rb.position.x <= startPos.x - moveDistance)
             {
                 movingRight = true;
                 Flip(1);
@@ -80,20 +131,43 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    IEnumerator DamageCooldown()
+    public void Attack()
     {
-        canDamage = false;
-        yield return new WaitForSeconds(damageCooldown);
-        canDamage = true;
-    }
+        if (isCoolingDown)
+            return;
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Player") && canDamage)
+        anim.Play("Idle");
+
+        Collider2D hitPlayer = Physics2D.OverlapCircle(
+            attackPoint.position,
+            attackRange,
+            playerLayer
+        );
+
+        if (hitPlayer != null)
         {
-            col.GetComponent<PlayerMovement>()?.TakeDamage(damage);
-            StartCoroutine(DamageCooldown());
+            hitPlayer.GetComponent<PlayerMovement>()?.TakeDamage(damage);
         }
+
+        StartCoroutine(AttackCooldown());
     }
 
+    IEnumerator AttackCooldown()
+    {
+        isCoolingDown = true;
+        anim.Play("Idle");
+        
+        yield return new WaitForSeconds(attackCooldown);
+
+        isCoolingDown = false;
+    }
+
+    
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
 }

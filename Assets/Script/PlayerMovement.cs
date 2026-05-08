@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float speed=5f;
     public float jumpForce = 10f;
+    public float maxFallSpeed = -15f;
     private bool isGround = true;
     private bool canDoubleJump;
 
@@ -56,6 +57,11 @@ public class PlayerMovement : MonoBehaviour
     public int maxHP = 20;
     int currentHP;
     bool canTakeDamage = true;
+    // ===== Lives =====
+    [Header("Lives")]
+    public int maxLives = 3;
+    private int currentLives;
+    public TMP_Text livesText;
 
     // ===== COLLECT =====
     [Header("Collectibles")]
@@ -74,6 +80,9 @@ public class PlayerMovement : MonoBehaviour
     bool isPaused = false;
     private float facingDirection = 1;
 
+    //====CHECKPION=====
+    private Vector3 respawnPoint;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -82,6 +91,9 @@ public class PlayerMovement : MonoBehaviour
         currentHP = maxHP;
         hpBar.fillAmount = (float)currentHP / maxHP;
         gemText.text = "Gem: 0";
+        respawnPoint = transform.position;
+        currentLives = maxLives;
+        UpdateLivesUI();
     }
 
     // Update is called once per frame
@@ -170,6 +182,11 @@ public class PlayerMovement : MonoBehaviour
         if (rb.linearVelocityY < 0)
         {
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * 2f * Time.deltaTime;
+
+            if (rb.linearVelocityY < maxFallSpeed)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, maxFallSpeed);
+            }
         }
     }
     
@@ -239,10 +256,8 @@ public class PlayerMovement : MonoBehaviour
     {
         anim.SetTrigger("Attack" + attackIndex);
 
-        attackIndex++;
+        attackIndex = attackIndex % 3 + 1;
 
-        if (attackIndex > 3)
-            attackIndex = 1;
         Collider2D[] hits = Physics2D.OverlapCircleAll(
         attackPoint.position,
         attackRange,
@@ -273,7 +288,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentHP <= 0)
         {
-            Die();
+            Respawn();
         }
     }
 
@@ -284,6 +299,25 @@ public class PlayerMovement : MonoBehaviour
         canTakeDamage = true;
     }
 
+    public void Respawn()
+    {
+        currentLives--;
+
+        if (currentLives <= 0)
+        {
+            Die();
+            return;
+        }
+
+        currentHP = maxHP;
+        hpBar.fillAmount = (float)currentHP / maxHP;
+        transform.position = respawnPoint;
+        UpdateLivesUI();
+    }
+    public void UpdateLivesUI()
+    {
+        livesText.text = "X" + currentLives;
+    }
     public void Die()
     {
         anim.SetTrigger("Death");
@@ -361,6 +395,10 @@ public class PlayerMovement : MonoBehaviour
         isPaused = true;
     }
 
+    public void SetCheckpoint(Vector3 point)
+    {
+        respawnPoint = point;
+    }
 }
 
 
