@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     // ===== COMPONENT =====
@@ -72,8 +72,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("UI")]
     public Image hpBar;
     public TextMeshProUGUI gemText;
-    public GameObject winPanel;
-    public GameObject gameOverPanel;
     public GameObject pausePanel;
     
     // ===== STATE =====
@@ -321,7 +319,7 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         anim.SetTrigger("Death");
-        OverGame();
+        GameManager.instance.GameOver();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -341,7 +339,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hasKey)
             {
-                WinGame();
+                GameManager.instance.WinGame();
             }
         }
     }
@@ -381,20 +379,6 @@ public class PlayerMovement : MonoBehaviour
             Time.timeScale = 1f;
     }
     
-    public void WinGame()
-    {
-        winPanel.SetActive(true);
-        Time.timeScale = 0f;
-        isPaused = true;
-    }
-    
-    public void OverGame()
-    {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0f;
-        isPaused = true;
-    }
-
     public void SetCheckpoint(Vector3 point)
     {
         respawnPoint = point;
