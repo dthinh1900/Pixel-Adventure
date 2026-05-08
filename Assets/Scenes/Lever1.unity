@@ -5468,11 +5468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3107973566474715503, guid: 0bfe568949d8b7d408de374d3de515c9, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3496034150657844671, guid: 0bfe568949d8b7d408de374d3de515c9, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5182565366948272336, guid: 0bfe568949d8b7d408de374d3de515c9, type: 3}
       propertyPath: hpBar
@@ -5508,7 +5508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8776697537766422297, guid: 0bfe568949d8b7d408de374d3de515c9, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9102609809750493710, guid: 0bfe568949d8b7d408de374d3de515c9, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
