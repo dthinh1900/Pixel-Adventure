@@ -27,13 +27,23 @@ public class Enemy : MonoBehaviour
     [Header("Track")]
     bool isCoolingDown = false;
     public float focusRange = 3f;
+    bool canFocusPlayer = true;
 
-    bool hasTarget = false;
+
     public float attackCooldown = 2f;
 
     [Header("Attack")]
     public float attackRange = 1.5f;
-    
+
+    [Header("Edge Check")]
+    public Transform edgeCheck;
+    public float edgeDistance = 0.2f;
+    public LayerMask groundLayer;
+
+    [Header("Wall Check")]
+    public Transform wallCheck;
+    public float wallCheckDistance = 0.2f;
+    public LayerMask wallLayer;
 
     Animator anim;
     Transform player;
@@ -42,62 +52,69 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
         currentHealth = maxHealth;
         startPos = transform.position;
+
+        Flip(movingRight ? 1 : -1);
     }
     void Update()
     {
-        CheckTarget();
-        if (!hasTarget)
-        {
-            Patrol();
-            return;
-        }
-
-        if (isCoolingDown)
-            return;
-
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= attackRange && IsPlayerInFront())
+        if (distance <= focusRange && canFocusPlayer)
         {
-            Attack();
+            if (distance <= attackRange &&
+                IsPlayerInFront() &&
+                HasGroundAhead())
+            {
+                if (!isCoolingDown)
+                {
+                    Attack();
+                }
+                else
+                {
+                    currentSpeed = 0;
+                }
+            }
+            else
+            {
+                TrackPlayer();
+            }
         }
         else
         {
-            TrackPlayer();
+            Patrol();
         }
         anim.SetFloat("Speed", currentSpeed);
     }
 
-    public void CheckTarget()
-    {
-        float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= focusRange)
-        {
-            hasTarget = true;
-        }
-        else
-        {
-            hasTarget = false;
-            
-        }
-    }
+
 
     public void TrackPlayer()
     {
-        
-        currentSpeed = speed * 2f;
+        if (!HasGroundAhead() || HasWallAhead())
+        {
+            currentSpeed = 0;
+
+            if (canFocusPlayer)
+            {
+                canFocusPlayer = false;
+                StartCoroutine(FocusCooldown());
+            }
+
+            return;
+        }
+
+        currentSpeed = speed * 1.5f;
+
         float dirX = player.position.x > transform.position.x ? 1 : -1;
 
-        Vector2 nextPos = rb.position + Vector2.right * dirX * speed * 2f * Time.deltaTime;
+        Vector2 nextPos = rb.position +
+                          Vector2.right * dirX * speed * 1.5f * Time.deltaTime;
 
-        if (nextPos.x >= startPos.x - moveDistance &&
-            nextPos.x <= startPos.x + moveDistance)
-        {
-            rb.MovePosition(nextPos);
-        }
+        rb.MovePosition(nextPos);
 
         Flip((int)dirX);
     }
@@ -112,8 +129,32 @@ public class Enemy : MonoBehaviour
     }
     public void Patrol()
     {
-        
+        float dir = movingRight ? 1 : -1;
+
+        Vector2 nextEdgePos =
+            (Vector2)edgeCheck.position +
+            Vector2.right * dir * speed * Time.deltaTime;
+
+        bool hasGround = Physics2D.Raycast(
+            nextEdgePos,
+            Vector2.down,
+            edgeDistance,
+            groundLayer
+        );
+
+        if (!hasGround || HasWallAhead())
+        {
+            currentSpeed = 0;
+
+            movingRight = !movingRight;
+
+            Flip(movingRight ? 1 : -1);
+
+            return;
+        }
+
         currentSpeed = speed;
+
         if (movingRight)
         {
             rb.MovePosition(rb.position + Vector2.right * speed * Time.deltaTime);
@@ -126,7 +167,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            rb.MovePosition(rb.position + Vector2.left * speed * Time.deltaTime);            
+            rb.MovePosition(rb.position + Vector2.left * speed * Time.deltaTime);
 
             if (rb.position.x <= startPos.x - moveDistance)
             {
@@ -210,7 +251,7 @@ public class Enemy : MonoBehaviour
 
     
 
-    bool IsPlayerInFront()
+    public bool IsPlayerInFront()
     {
         float dirToPlayer = player.position.x - transform.position.x;
 
@@ -225,5 +266,38 @@ public class Enemy : MonoBehaviour
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, focusRange);
+
+        
     }
+
+
+
+    bool HasGroundAhead()
+    {
+        return Physics2D.Raycast(
+            edgeCheck.position,
+            Vector2.down,
+            edgeDistance,
+            groundLayer
+        );
+    }
+
+    IEnumerator FocusCooldown()
+    {
+        yield return new WaitForSeconds(1f);
+
+        canFocusPlayer = true;
+    }
+
+    bool HasWallAhead()
+    {
+        return Physics2D.OverlapCircle(
+            wallCheck.position,
+            0.1f,
+            wallLayer
+        );
+    }
+
+
+
 }

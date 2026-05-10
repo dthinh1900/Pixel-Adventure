@@ -190,19 +190,26 @@ public class PlayerMovement : MonoBehaviour
     
     public void CheckWall()
     {
-        Vector2 dir = new Vector2(facingDirection, 0);
+        bool hitRight = Physics2D.Raycast(
+        wallCheck.position,
+        Vector2.right,
+        wallCheckDistance,
+        wallLayer
+        );
 
-        bool hit = Physics2D.Raycast(
+        bool hitLeft = Physics2D.Raycast(
             wallCheck.position,
-            dir,
+            Vector2.left,
             wallCheckDistance,
             wallLayer
         );
 
-        isTouchingWall = hit;
+        isTouchingWall = hitLeft || hitRight;
 
-        if (hit)
-            wallDirection = (int)facingDirection;
+        if (hitRight)
+            wallDirection = 1;
+        else if (hitLeft)
+            wallDirection = -1;
         else
             wallDirection = 0;
     }
