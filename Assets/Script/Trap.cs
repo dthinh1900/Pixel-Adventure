@@ -6,21 +6,33 @@ public class Trap : MonoBehaviour
     public int damage = 1;
     public float damageCooldown = 1f;
 
-    bool canDamage = true;
+    PlayerMovement player;
 
-    private void OnTriggerStay2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player") && canDamage)
+        if (col.CompareTag("Player"))
         {
-            col.GetComponent<PlayerMovement>()?.TakeDamage(damage);
-            StartCoroutine(DamageCooldown());
+            player = col.GetComponent<PlayerMovement>();
+
+            StartCoroutine(DamageLoop());
         }
     }
 
-    IEnumerator DamageCooldown()
+    private void OnTriggerExit2D(Collider2D col)
     {
-        canDamage = false;
-        yield return new WaitForSeconds(damageCooldown);
-        canDamage = true;
+        if (col.CompareTag("Player"))
+        {
+            player = null;
+        }
+    }
+
+    IEnumerator DamageLoop()
+    {
+        while (player != null)
+        {
+            player.TakeDamage(damage);
+
+            yield return new WaitForSeconds(damageCooldown);
+        }
     }
 }

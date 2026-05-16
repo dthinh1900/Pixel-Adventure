@@ -4,6 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     Rigidbody2D rb;
+    SpriteRenderer sr;
 
     [Header("Stats")]
     public int maxHealth = 3;
@@ -45,12 +46,15 @@ public class Enemy : MonoBehaviour
     public float wallCheckDistance = 0.2f;
     public LayerMask wallLayer;
 
+    bool isDead;
+    bool isHit;
     Animator anim;
     Transform player;
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         currentHealth = maxHealth;
@@ -60,6 +64,7 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        if (isHit || isDead) return;
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= focusRange && canFocusPlayer)
@@ -117,11 +122,20 @@ public class Enemy : MonoBehaviour
         rb.MovePosition(nextPos);
 
         Flip((int)dirX);
+
+        movingRight = dirX > 0;
     }
 
     public void TakeDamage(int dmg)
     {
+        if (isDead) return;
+
         currentHealth -= dmg;
+
+        anim.SetTrigger("Hit");
+
+        StartCoroutine(HitStun());
+
         if (currentHealth <= 0)
         {
             Die();
@@ -185,11 +199,27 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        isDead = true;
+
         if (dropGem && gemPrefab != null)
         {
-            Instantiate(gemPrefab, transform.position, Quaternion.identity);
-        }
+            Vector3 randomOffset = new Vector3(Random.Range(-1f, 1f),0,0);
 
+            Instantiate(
+                gemPrefab,
+                transform.position + randomOffset,
+                Quaternion.identity
+            );
+        }
+        SoundManager.instance.PlaySound(SoundManager.instance.enemyDieSFX);
+        anim.SetTrigger("Die");
+
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    public void DestroyEnemy()
+    {
+        player.GetComponent<PlayerMovement>()?.AddSoul(1);
         Destroy(gameObject);
     }
 
@@ -249,7 +279,14 @@ public class Enemy : MonoBehaviour
         isCoolingDown = false;
     }
 
-    
+    IEnumerator HitStun()
+    {
+        isHit = true;
+
+        yield return new WaitForSeconds(0.3f);
+
+        isHit = false;
+    }
 
     public bool IsPlayerInFront()
     {
@@ -259,19 +296,14 @@ public class Enemy : MonoBehaviour
                (dirToPlayer < 0 && transform.localScale.x < 0);
     }
 
-    private void OnDrawGizmosSelected()
+    IEnumerator FocusCooldown()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        yield return new WaitForSeconds(1f);
 
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, focusRange);
-
-        
+        canFocusPlayer = true;
     }
 
-
-
+    //=======================================
     bool HasGroundAhead()
     {
         return Physics2D.Raycast(
@@ -281,14 +313,6 @@ public class Enemy : MonoBehaviour
             groundLayer
         );
     }
-
-    IEnumerator FocusCooldown()
-    {
-        yield return new WaitForSeconds(1f);
-
-        canFocusPlayer = true;
-    }
-
     bool HasWallAhead()
     {
         return Physics2D.OverlapCircle(
@@ -298,6 +322,15 @@ public class Enemy : MonoBehaviour
         );
     }
 
+    //=======================================
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, focusRange);
 
 
+    }
 }

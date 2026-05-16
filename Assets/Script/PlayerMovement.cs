@@ -72,15 +72,18 @@ public class PlayerMovement : MonoBehaviour
     [Header("UI")]
     public Image hpBar;
     public TextMeshProUGUI gemText;
-    public GameObject pausePanel;
     
+    public Image damageFlash;
     // ===== STATE =====
-    bool isPaused = false;
+    
     private float facingDirection = 1;
 
     //====CHECKPION=====
     private Vector3 respawnPoint;
 
+    //==== SOUL System =====
+    int soul = 0;
+    public TextMeshProUGUI soulText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -88,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         currentHP = maxHP;
         hpBar.fillAmount = (float)currentHP / maxHP;
-        gemText.text = "Gem: 0";
+        UpdateUI();
         respawnPoint = transform.position;
         currentLives = maxLives;
         UpdateLivesUI();
@@ -97,8 +100,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (isPaused) return;
         if (isDashing) return;
         CheckWall();       
         WallSlide();
@@ -119,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
             Attack();
         }
     }
-
+//====================================================
     public void Move()
     {
         float move = Input.GetAxis("Horizontal");
@@ -149,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
             if (isWallSliding)
             {
                 anim.SetTrigger("Jump");
+                SoundManager.instance.PlaySound(SoundManager.instance.jumpSFX);
                 rb.linearVelocity = new Vector2(-wallDirection * wallJumpForceX, wallJumpForceY);
                 isWallSliding = false;
                 return;
@@ -157,6 +159,7 @@ public class PlayerMovement : MonoBehaviour
             if (isGround)
             {
                 anim.SetTrigger("Jump");
+                SoundManager.instance.PlaySound(SoundManager.instance.jumpSFX);
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = true;
             }
@@ -165,6 +168,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 anim.ResetTrigger("Jump");
                 anim.SetTrigger("Jump");
+                SoundManager.instance.PlaySound(SoundManager.instance.jumpSFX);
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
                 canDoubleJump = false;
             }
@@ -220,7 +224,7 @@ public class PlayerMovement : MonoBehaviour
 
         bool pushing = isTouchingWall && (move * facingDirection > 0);
 
-        isWallSliding = pushing;
+        isWallSliding = pushing && !isGround && rb.linearVelocityY < 0;
 
         if (!isTouchingWall)
         {
@@ -256,11 +260,11 @@ public class PlayerMovement : MonoBehaviour
         isDashCooldown = false;
     }
 
-
+//====================================================
     public void Attack()
     {
         anim.SetTrigger("Attack" + attackIndex);
-
+        SoundManager.instance.PlaySound(SoundManager.instance.attackSFX);
         attackIndex = attackIndex % 3 + 1;
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(
@@ -290,6 +294,7 @@ public class PlayerMovement : MonoBehaviour
         hpBar.fillAmount = (float)currentHP / maxHP;
 
         StartCoroutine(DamageCooldown());
+        StartCoroutine(DamageFlashEffect());
 
         if (currentHP <= 0)
         {
@@ -304,6 +309,21 @@ public class PlayerMovement : MonoBehaviour
         canTakeDamage = true;
     }
 
+    IEnumerator DamageFlashEffect()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            damageFlash.color = new Color(1f, 1f, 1f, 0.5f);
+
+            yield return new WaitForSeconds(0.08f);
+
+            damageFlash.color = new Color(1f, 1f, 1f, 0f);
+
+            yield return new WaitForSeconds(0.08f);
+        }
+    }
+
+//====================================================
     public void Respawn()
     {
         currentLives--;
@@ -325,19 +345,14 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die()
     {
+        SoundManager.instance.PlaySound(SoundManager.instance.playerDieSFX);
         anim.SetTrigger("Death");
         GameManager.instance.GameOver();
     }
-
+//====================================================
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Gem"))
-        {
-            gemCount++;
-            gemText.text = "Gem: " + gemCount;
-            Destroy(col.gameObject);
-        }
-        else if (col.CompareTag("Key"))
+        if (col.CompareTag("Key"))
         {
             hasKey = true;
             Destroy(col.gameObject);
@@ -373,22 +388,36 @@ public class PlayerMovement : MonoBehaviour
             isGround = false;
         }
     }
-
-    public void PauseGame()
-    {
-        isPaused = !isPaused;
-
-        pausePanel.SetActive(isPaused);
-
-        if (isPaused)
-            Time.timeScale = 0f;
-        else
-            Time.timeScale = 1f;
-    }
-    
+//====================================================
     public void SetCheckpoint(Vector3 point)
     {
         respawnPoint = point;
+    }
+    public void Heal(int amount)
+    {
+        currentHP += amount;
+
+        if (currentHP > maxHP)
+            currentHP = maxHP;
+
+        hpBar.fillAmount = (float)currentHP / maxHP;
+    }
+
+    public void AddSoul(int amount)
+    {
+        soul += amount;
+        soulText.text = "X" + soul;
+    }
+    public void AddGem()
+    {
+        gemCount++;
+        SoundManager.instance.PlaySound(SoundManager.instance.collectSFX);
+        gemText.text = "X" + gemCount;
+    }
+    public void UpdateUI()
+    {
+        gemText.text = "X" + gemCount;
+        soulText.text = "X" + soul;
     }
 }
 

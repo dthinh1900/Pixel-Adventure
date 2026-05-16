@@ -2,7 +2,7 @@
 - Project name: Pixel Adventure
 - Unity version: Unity 6000.3.0f1
 - Active game object:
-  - Name: Enemy (8)
-  - Tag: Enemy
-  - Layer: Enemy
+  - Name: Player
+  - Tag: Player
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

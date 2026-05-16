@@ -7,12 +7,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverPanel;
     public GameObject winPanel;
+    public GameObject pausePanel;
 
+    bool isPaused = false;
     void Awake()
     {
         instance = this;
     }
-
+    void Update()
+    {
+        if (isPaused) return;
+    }
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
@@ -39,4 +44,16 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+
+        pausePanel.SetActive(isPaused);
+
+        if (isPaused)
+            Time.timeScale = 0f;
+        else
+            Time.timeScale = 1f;
+    }
+
 }
