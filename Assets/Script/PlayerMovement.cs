@@ -65,14 +65,15 @@ public class PlayerMovement : MonoBehaviour
 
     // ===== COLLECT =====
     [Header("Collectibles")]
-    int gemCount = 0;
+    int StarCount = 0;
     bool hasKey = false;
 
     // ===== UI =====
     [Header("UI")]
     public Image hpBar;
-    public TextMeshProUGUI gemText;
-    
+    public TextMeshProUGUI starText;
+    float playTime;
+
     public Image damageFlash;
     // ===== STATE =====
     
@@ -100,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playTime += Time.deltaTime;
         if (isDashing) return;
         CheckWall();       
         WallSlide();
@@ -408,16 +410,33 @@ public class PlayerMovement : MonoBehaviour
         soul += amount;
         soulText.text = "X" + soul;
     }
-    public void AddGem()
+    public void AddStar()
     {
-        gemCount++;
+        StarCount++;
         SoundManager.instance.PlaySound(SoundManager.instance.collectSFX);
-        gemText.text = "X" + gemCount;
+        starText.text = "X" + StarCount;
     }
     public void UpdateUI()
     {
-        gemText.text = "X" + gemCount;
+        starText.text = "X" + StarCount;
         soulText.text = "X" + soul;
+    }
+    public int GetSoul()
+    {
+        return soul;
+    }
+
+    public int GetStar()
+    {
+        return StarCount;
+    }
+    public string GetFormattedTime()
+    {
+        int minutes = Mathf.FloorToInt(playTime / 60);
+
+        float seconds = playTime % 60;
+
+        return string.Format("{0:00}:{1:00.00}", minutes, seconds);
     }
 }
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Gem : MonoBehaviour
+public class Star : MonoBehaviour
 {
     PlayerMovement player;
 
@@ -49,7 +49,7 @@ public class Gem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.AddGem();
+            player.AddStar();
             Destroy(gameObject);
         }
     }
