@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 3fa77d92f6a7b4943be6ae7be071c6dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4152641671453899733
+    second: BTN_MainMenu_0
+  - first:
+      213: -2609482428015837613
+    second: BTN_MainMenu_1
+  - first:
+      213: 518823204417275416
+    second: BTN_MainMenu_2
+  - first:
+      213: 9138718353893092567
+    second: BTN_MainMenu_3
+  - first:
+      213: 1557041879293287671
+    second: BTN_MainMenu_4
+  - first:
+      213: -4186623855737704533
+    second: BTN_MainMenu_5
+  - first:
+      213: -2095137747843314077
+    second: BTN_MainMenu_6
+  - first:
+      213: 5631946201999332484
+    second: BTN_MainMenu_7
+  - first:
+      213: -3238595044909698295
+    second: BTN_MainMenu_8
+  - first:
+      213: -4895924132297033160
+    second: BTN_MainMenu_9
+  - first:
+      213: 5887737748040296755
+    second: BTN_MainMenu_10
+  - first:
+      213: -6399115013574229576
+    second: BTN_MainMenu_11
+  - first:
+      213: -7485010247078474170
+    second: BTN_MainMenu_12
+  - first:
+      213: -2136547781362610692
+    second: BTN_MainMenu_13
+  - first:
+      213: 7793847232543812237
+    second: BTN_MainMenu_14
+  - first:
+      213: -1299527485755037084
+    second: BTN_MainMenu_15
+  - first:
+      213: 1976206123716415751
+    second: BTN_MainMenu_16
+  - first:
+      213: 209322541962294510
+    second: BTN_MainMenu_17
+  - first:
+      213: -4645707647530456409
+    second: BTN_MainMenu_18
+  - first:
+      213: -4665109821791808002
+    second: BTN_MainMenu_19
+  - first:
+      213: -6008197012452799552
+    second: BTN_MainMenu_20
+  - first:
+      213: 3887402525388861874
+    second: BTN_MainMenu_21
+  - first:
+      213: 7619691020249439780
+    second: BTN_MainMenu_22
+  - first:
+      213: -5088821364825717610
+    second: BTN_MainMenu_23
+  - first:
+      213: 3969059197745531853
+    second: BTN_MainMenu_24
+  - first:
+      213: 1570254816893046874
+    second: BTN_MainMenu_25
+  - first:
+      213: -8273551069028520850
+    second: BTN_MainMenu_26
+  - first:
+      213: -5335560405067956145
+    second: BTN_MainMenu_27
+  - first:
+      213: -3962951427953470187
+    second: BTN_MainMenu_28
+  - first:
+      213: 4821021803314104480
+    second: BTN_MainMenu_29
+  - first:
+      213: 4851678190878431708
+    second: BTN_MainMenu_30
+  - first:
+      213: 5538678157507515371
+    second: BTN_MainMenu_31
+  - first:
+      213: 2702903452390217919
+    second: BTN_MainMenu_32
+  - first:
+      213: 4106141131237190890
+    second: BTN_MainMenu_33
+  - first:
+      213: 1743615476577229336
+    second: BTN_MainMenu_34
+  - first:
+      213: -7958813557365455989
+    second: BTN_MainMenu_35
+  - first:
+      213: 7603514143700177544
+    second: BTN_MainMenu_36
+  - first:
+      213: 3988792540891217219
+    second: BTN_MainMenu_37
+  - first:
+      213: -4940410501368132935
+    second: BTN_MainMenu_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BTN_MainMenu_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 485
+        width: 1141
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a843f889c5b7e240800000000000000
+      internalID: 4821021803314104480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BTN_MainMenu_30
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 29
+        width: 1141
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd991dbfb9f945340800000000000000
+      internalID: 4851678190878431708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BTN_MainMenu_31
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 277
+        width: 1140
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3537760765ddc40800000000000000
+      internalID: 5538678157507515371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BTN_MainMenu_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 721
+        width: 1141
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb855ed8e54a28520800000000000000
+      internalID: 2702903452390217919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 418629e5e01da0c41b4a6d1198247769
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BTN_MainMenu_0: -4152641671453899733
+      BTN_MainMenu_1: -2609482428015837613
+      BTN_MainMenu_10: 5887737748040296755
+      BTN_MainMenu_11: -6399115013574229576
+      BTN_MainMenu_12: -7485010247078474170
+      BTN_MainMenu_13: -2136547781362610692
+      BTN_MainMenu_14: 7793847232543812237
+      BTN_MainMenu_15: -1299527485755037084
+      BTN_MainMenu_16: 1976206123716415751
+      BTN_MainMenu_17: 209322541962294510
+      BTN_MainMenu_18: -4645707647530456409
+      BTN_MainMenu_19: -4665109821791808002
+      BTN_MainMenu_2: 518823204417275416
+      BTN_MainMenu_20: -6008197012452799552
+      BTN_MainMenu_21: 3887402525388861874
+      BTN_MainMenu_22: 7619691020249439780
+      BTN_MainMenu_23: -5088821364825717610
+      BTN_MainMenu_24: 3969059197745531853
+      BTN_MainMenu_25: 1570254816893046874
+      BTN_MainMenu_26: -8273551069028520850
+      BTN_MainMenu_27: -5335560405067956145
+      BTN_MainMenu_28: -3962951427953470187
+      BTN_MainMenu_29: 4821021803314104480
+      BTN_MainMenu_3: 9138718353893092567
+      BTN_MainMenu_30: 4851678190878431708
+      BTN_MainMenu_31: 5538678157507515371
+      BTN_MainMenu_32: 2702903452390217919
+      BTN_MainMenu_33: 4106141131237190890
+      BTN_MainMenu_34: 1743615476577229336
+      BTN_MainMenu_35: -7958813557365455989
+      BTN_MainMenu_36: 7603514143700177544
+      BTN_MainMenu_37: 3988792540891217219
+      BTN_MainMenu_38: -4940410501368132935
+      BTN_MainMenu_4: 1557041879293287671
+      BTN_MainMenu_5: -4186623855737704533
+      BTN_MainMenu_6: -2095137747843314077
+      BTN_MainMenu_7: 5631946201999332484
+      BTN_MainMenu_8: -3238595044909698295
+      BTN_MainMenu_9: -4895924132297033160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,17 +24,12 @@ public class GameManager : MonoBehaviour
     bool isPaused = false;
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
+        
     }
     void Start()
     {
+        Time.timeScale = 1f;
         player = FindFirstObjectByType<PlayerMovement>();
     }
     void Update()
@@ -60,6 +55,25 @@ public class GameManager : MonoBehaviour
 
         winPanel.SetActive(true);
 
+        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+
+        
+        if (nextLevel < SceneManager.sceneCountInBuildSettings)
+        {
+            int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+            
+            if (nextLevel > unlockedLevel)
+            {
+                PlayerPrefs.SetInt("UnlockedLevel",nextLevel);
+            }
+
+            
+            PlayerPrefs.SetInt("CurrentLevel",nextLevel);
+        }
+
+        PlayerPrefs.Save();
+
         Time.timeScale = 0f;
     }
 
@@ -75,6 +89,7 @@ public class GameManager : MonoBehaviour
     }
     public void NextGame()
     {
+        Time.timeScale = 1f;
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         int nextScene = currentScene + 1;
 
