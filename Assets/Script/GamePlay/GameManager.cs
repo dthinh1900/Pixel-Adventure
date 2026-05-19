@@ -95,7 +95,9 @@ public class GameManager : MonoBehaviour
 
         if (nextScene < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(nextScene);
+            
+            PlayerPrefs.SetInt("TargetScene", nextScene);
+            SceneManager.LoadScene("LoadingScene");
         }
         else
         {

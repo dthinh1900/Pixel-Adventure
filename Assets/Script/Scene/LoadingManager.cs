@@ -18,7 +18,7 @@ public class LoadingManager : MonoBehaviour
         // Chờ Unity ổn định
         yield return null;
 
-        yield return new WaitForSecondsRealtime(0.05f);
+        yield return new WaitForSecondsRealtime(1.05f);
 
         SceneManager.LoadScene(targetScene);
     }

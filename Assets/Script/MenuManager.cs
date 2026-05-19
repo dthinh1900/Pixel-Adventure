@@ -9,11 +9,8 @@ public class MenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        Debug.Log("Before PlayGame TimeScale = " + Time.timeScale);
-
+        
         Time.timeScale = 1f;
-
-        Debug.Log("After PlayGame TimeScale = " + Time.timeScale);
 
         PlayerPrefs.SetInt("TargetScene", 1);
         SceneManager.LoadScene("LoadingScene");

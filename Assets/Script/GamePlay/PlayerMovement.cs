@@ -24,12 +24,13 @@ public class PlayerMovement : MonoBehaviour
     public float wallCheckDistance = 0.5f;
     public LayerMask wallLayer;
 
-    public float wallJumpForceX = 10f;
+    public float wallJumpForceX = 1f;
     public float wallJumpForceY = 12f;
 
     private bool isWallSliding;
     private bool isTouchingWall;
     private int wallDirection;
+    private bool lockMove;
 
     // ===== DASH =====
     [Header("Dash")]
@@ -125,6 +126,10 @@ public class PlayerMovement : MonoBehaviour
 //====================================================
     public void Move()
     {
+        if (lockMove)
+        {
+            return;
+        }
         float move = Input.GetAxis("Horizontal");
         if (move > 0)
         {
@@ -151,10 +156,25 @@ public class PlayerMovement : MonoBehaviour
 
             if (isWallSliding)
             {
+
                 anim.SetTrigger("Jump");
                 SoundManager.instance.PlaySound(SoundManager.instance.jumpSFX);
-                rb.linearVelocity = new Vector2(-wallDirection * wallJumpForceX, wallJumpForceY);
+                float jumpX = -wallDirection * Mathf.Abs(wallJumpForceX);
+                
+                if (facingDirection < 0)
+                {
+                    jumpX = -jumpX;
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+                else if (facingDirection > 0)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+
+                rb.linearVelocity = new Vector2(    jumpX,    wallJumpForceY);
+
                 isWallSliding = false;
+                lockMove = true;
                 return;
             }
 
@@ -213,9 +233,14 @@ public class PlayerMovement : MonoBehaviour
         isTouchingWall = hitLeft || hitRight;
 
         if (hitRight)
-            wallDirection = 1;
+        {
+            wallDirection = 1;            
+        }
+            
         else if (hitLeft)
-            wallDirection = -1;
+        {
+            wallDirection = -1;            
+        }
         else
             wallDirection = 0;
     }
@@ -227,7 +252,10 @@ public class PlayerMovement : MonoBehaviour
         bool pushing = isTouchingWall && (move * facingDirection > 0);
 
         isWallSliding = pushing && !isGround && rb.linearVelocityY < 0;
-
+        if (isWallSliding)
+        {
+            lockMove = false;
+        }
         if (!isTouchingWall)
         {
             isWallSliding = false;
@@ -238,6 +266,8 @@ public class PlayerMovement : MonoBehaviour
         if (isWallSliding && !isGround && rb.linearVelocity.y < 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, -2f);
+            canDoubleJump = false;
+            
         }
     }
 
@@ -378,6 +408,7 @@ public class PlayerMovement : MonoBehaviour
                 canDoubleJump = true;
                 
             }
+            lockMove = false;
             isGround = true;
             
         }
