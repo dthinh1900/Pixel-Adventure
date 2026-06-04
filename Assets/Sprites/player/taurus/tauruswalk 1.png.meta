@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 201f99e6bcc65f745875ef526d957db3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4028120500241129698
+    second: tauruswalk 1_0
+  - first:
+      213: -4263854262652987652
+    second: tauruswalk 1_1
+  - first:
+      213: -5359069865871696039
+    second: tauruswalk 1_2
+  - first:
+      213: 4359563056809079219
+    second: tauruswalk 1_3
+  - first:
+      213: 6463826788308926747
+    second: tauruswalk 1_4
+  - first:
+      213: 4944528015294340271
+    second: tauruswalk 1_5
+  - first:
+      213: -5464517605011410224
+    second: tauruswalk 1_6
+  - first:
+      213: 7986243382358083136
+    second: tauruswalk 1_7
+  - first:
+      213: 8985251649570067914
+    second: tauruswalk 1_8
+  - first:
+      213: 4673938670829262312
+    second: tauruswalk 1_9
+  - first:
+      213: 5505243398331295880
+    second: tauruswalk 1_10
+  - first:
+      213: 5441509279565797524
+    second: tauruswalk 1_11
+  - first:
+      213: -7408718477281612428
+    second: tauruswalk 1_12
+  - first:
+      213: 4435644289289015485
+    second: tauruswalk 1_13
+  - first:
+      213: -5861982473941501852
+    second: tauruswalk 1_14
+  - first:
+      213: 1428532165035719569
+    second: tauruswalk 1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tauruswalk 1_0
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 27
+        width: 482
+        height: 329
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f98a63fbd3918c0800000000000000
+      internalID: -4028120500241129698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_1
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 27
+        width: 482
+        height: 329
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf69884932fb3d4c0800000000000000
+      internalID: -4263854262652987652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_2
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 28
+        width: 482
+        height: 328
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f973eb952c0a5b0800000000000000
+      internalID: -5359069865871696039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_3
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 28
+        width: 485
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b175019087408c30800000000000000
+      internalID: 4359563056809079219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_4
+      rect:
+        serializedVersion: 2
+        x: 3797
+        y: 29
+        width: 481
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11cec6973024b950800000000000000
+      internalID: 6463826788308926747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_5
+      rect:
+        serializedVersion: 2
+        x: 4715
+        y: 29
+        width: 463
+        height: 348
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac169d580e7e9440800000000000000
+      internalID: 4944528015294340271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_6
+      rect:
+        serializedVersion: 2
+        x: 5622
+        y: 30
+        width: 435
+        height: 346
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d23d64c0322a24b0800000000000000
+      internalID: -5464517605011410224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_7
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 30
+        width: 432
+        height: 333
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04684471b06d4de60800000000000000
+      internalID: 7986243382358083136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_8
+      rect:
+        serializedVersion: 2
+        x: 7425
+        y: 30
+        width: 432
+        height: 333
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5dd16f4c602bc70800000000000000
+      internalID: 8985251649570067914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_9
+      rect:
+        serializedVersion: 2
+        x: 8325
+        y: 30
+        width: 432
+        height: 333
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e55db0257a2dd040800000000000000
+      internalID: 4673938670829262312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_10
+      rect:
+        serializedVersion: 2
+        x: 9222
+        y: 30
+        width: 435
+        height: 346
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888e997e3bd866c40800000000000000
+      internalID: 5505243398331295880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_11
+      rect:
+        serializedVersion: 2
+        x: 10122
+        y: 31
+        width: 435
+        height: 345
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498d2820cdf148b40800000000000000
+      internalID: 5441509279565797524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_12
+      rect:
+        serializedVersion: 2
+        x: 11015
+        y: 32
+        width: 462
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47da1c84cc1fe2990800000000000000
+      internalID: -7408718477281612428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_13
+      rect:
+        serializedVersion: 2
+        x: 11915
+        y: 34
+        width: 463
+        height: 343
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0df05eaf29e8d30800000000000000
+      internalID: 4435644289289015485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_14
+      rect:
+        serializedVersion: 2
+        x: 12797
+        y: 34
+        width: 481
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468b6218ffd06aea0800000000000000
+      internalID: -5861982473941501852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tauruswalk 1_15
+      rect:
+        serializedVersion: 2
+        x: 13673
+        y: 31
+        width: 498
+        height: 339
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b7c277f6a23d310800000000000000
+      internalID: 1428532165035719569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99851dbfe2f4eff448d61029f338ebd9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tauruswalk 1_0: -4028120500241129698
+      tauruswalk 1_1: -4263854262652987652
+      tauruswalk 1_10: 5505243398331295880
+      tauruswalk 1_11: 5441509279565797524
+      tauruswalk 1_12: -7408718477281612428
+      tauruswalk 1_13: 4435644289289015485
+      tauruswalk 1_14: -5861982473941501852
+      tauruswalk 1_15: 1428532165035719569
+      tauruswalk 1_2: -5359069865871696039
+      tauruswalk 1_3: 4359563056809079219
+      tauruswalk 1_4: 6463826788308926747
+      tauruswalk 1_5: 4944528015294340271
+      tauruswalk 1_6: -5464517605011410224
+      tauruswalk 1_7: 7986243382358083136
+      tauruswalk 1_8: 8985251649570067914
+      tauruswalk 1_9: 4673938670829262312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

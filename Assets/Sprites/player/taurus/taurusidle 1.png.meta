@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 0d280c275aa5c8d4fb5638ed8a3f5eda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3612651119228711142
+    second: taurusidle 1_0
+  - first:
+      213: 8652446469229911707
+    second: taurusidle 1_1
+  - first:
+      213: 2629730262871280896
+    second: taurusidle 1_2
+  - first:
+      213: -3162346176463778219
+    second: taurusidle 1_3
+  - first:
+      213: -4750647165970779448
+    second: taurusidle 1_4
+  - first:
+      213: 1620047189706280031
+    second: taurusidle 1_5
+  - first:
+      213: 4860501780172589067
+    second: taurusidle 1_6
+  - first:
+      213: -1010917790725645734
+    second: taurusidle 1_7
+  - first:
+      213: 7162993372585335672
+    second: taurusidle 1_8
+  - first:
+      213: -5720166269676997403
+    second: taurusidle 1_9
+  - first:
+      213: 3079764548585275900
+    second: taurusidle 1_10
+  - first:
+      213: 498978496654982107
+    second: taurusidle 1_11
+  - first:
+      213: 1149217013154257967
+    second: taurusidle 1_12
+  - first:
+      213: -3207818010811337412
+    second: taurusidle 1_13
+  - first:
+      213: -7971913268074064936
+    second: taurusidle 1_14
+  - first:
+      213: -3967211948568318774
+    second: taurusidle 1_15
+  - first:
+      213: 6300515459922660058
+    second: taurusidle 1_16
+  - first:
+      213: 3863299671756270976
+    second: taurusidle 1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: taurusidle 1_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 28
+        width: 498
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e07b036d07b22230800000000000000
+      internalID: 3612651119228711142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_1
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 28
+        width: 494
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e188c983aa31870800000000000000
+      internalID: 8652446469229911707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_2
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 28
+        width: 497
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d898dbdbdae7420800000000000000
+      internalID: 2629730262871280896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_3
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ecf0748e61d14d0800000000000000
+      internalID: -3162346176463778219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_4
+      rect:
+        serializedVersion: 2
+        x: 3777
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c27813929f421eb0800000000000000
+      internalID: -4750647165970779448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_5
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c00dde5509b7610800000000000000
+      internalID: 1620047189706280031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_6
+      rect:
+        serializedVersion: 2
+        x: 5575
+        y: 28
+        width: 496
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b084755fd98f37340800000000000000
+      internalID: 4860501780172589067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_7
+      rect:
+        serializedVersion: 2
+        x: 6475
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5adcaa10af78f1f0800000000000000
+      internalID: -1010917790725645734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_8
+      rect:
+        serializedVersion: 2
+        x: 7376
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b1d6d6580186360800000000000000
+      internalID: 7162993372585335672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_9
+      rect:
+        serializedVersion: 2
+        x: 8278
+        y: 28
+        width: 498
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e43bbf9513ed90b0800000000000000
+      internalID: -5720166269676997403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_10
+      rect:
+        serializedVersion: 2
+        x: 9176
+        y: 28
+        width: 494
+        height: 356
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf144462a858dba20800000000000000
+      internalID: 3079764548585275900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_11
+      rect:
+        serializedVersion: 2
+        x: 10075
+        y: 28
+        width: 497
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbbdab8c4abce600800000000000000
+      internalID: 498978496654982107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_12
+      rect:
+        serializedVersion: 2
+        x: 10976
+        y: 28
+        width: 498
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c15eed8c6d2ff00800000000000000
+      internalID: 1149217013154257967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_13
+      rect:
+        serializedVersion: 2
+        x: 11877
+        y: 28
+        width: 498
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c357d71d38a8b73d0800000000000000
+      internalID: -3207818010811337412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_14
+      rect:
+        serializedVersion: 2
+        x: 12779
+        y: 28
+        width: 497
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3d834ae131e5190800000000000000
+      internalID: -7971913268074064936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_15
+      rect:
+        serializedVersion: 2
+        x: 13675
+        y: 28
+        width: 496
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc66e080c1a1f8c0800000000000000
+      internalID: -3967211948568318774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_16
+      rect:
+        serializedVersion: 2
+        x: 14575
+        y: 28
+        width: 498
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada0c82ed6def6750800000000000000
+      internalID: 6300515459922660058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusidle 1_17
+      rect:
+        serializedVersion: 2
+        x: 15476
+        y: 28
+        width: 498
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d6ae335923d9530800000000000000
+      internalID: 3863299671756270976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b4288875b17bfe947855a16709a4408d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      taurusidle 1_0: 3612651119228711142
+      taurusidle 1_1: 8652446469229911707
+      taurusidle 1_10: 3079764548585275900
+      taurusidle 1_11: 498978496654982107
+      taurusidle 1_12: 1149217013154257967
+      taurusidle 1_13: -3207818010811337412
+      taurusidle 1_14: -7971913268074064936
+      taurusidle 1_15: -3967211948568318774
+      taurusidle 1_16: 6300515459922660058
+      taurusidle 1_17: 3863299671756270976
+      taurusidle 1_2: 2629730262871280896
+      taurusidle 1_3: -3162346176463778219
+      taurusidle 1_4: -4750647165970779448
+      taurusidle 1_5: 1620047189706280031
+      taurusidle 1_6: 4860501780172589067
+      taurusidle 1_7: -1010917790725645734
+      taurusidle 1_8: 7162993372585335672
+      taurusidle 1_9: -5720166269676997403
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

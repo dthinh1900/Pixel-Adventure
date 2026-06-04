@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 437cd88b9b9f9ac4c8493ed5c27df251
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2637619020823797045
+    second: taurusattack1 1_0
+  - first:
+      213: -8306257315694885404
+    second: taurusattack1 1_1
+  - first:
+      213: -68575586604394793
+    second: taurusattack1 1_2
+  - first:
+      213: 2972123556394617338
+    second: taurusattack1 1_3
+  - first:
+      213: 8322956132059902184
+    second: taurusattack1 1_4
+  - first:
+      213: 5000881738076157303
+    second: taurusattack1 1_5
+  - first:
+      213: -6207955104989629795
+    second: taurusattack1 1_6
+  - first:
+      213: 1679961327554058111
+    second: taurusattack1 1_7
+  - first:
+      213: -5493625270514390535
+    second: taurusattack1 1_8
+  - first:
+      213: -4459683673648784716
+    second: taurusattack1 1_9
+  - first:
+      213: -5027217580768615821
+    second: taurusattack1 1_10
+  - first:
+      213: 7876526648583807250
+    second: taurusattack1 1_11
+  - first:
+      213: -7250390734269422336
+    second: taurusattack1 1_12
+  - first:
+      213: 4582926244461901720
+    second: taurusattack1 1_13
+  - first:
+      213: -7416933281245608703
+    second: taurusattack1 1_14
+  - first:
+      213: 3543631603906899276
+    second: taurusattack1 1_15
+  - first:
+      213: -514754803413697255
+    second: taurusattack1 1_16
+  - first:
+      213: -8637435581811782748
+    second: taurusattack1 1_17
+  - first:
+      213: -4122493775674870029
+    second: taurusattack1 1_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: taurusattack1 1_0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 26
+        width: 668
+        height: 449
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d14055684ba9420800000000000000
+      internalID: 2637619020823797045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_3
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 28
+        width: 666
+        height: 461
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9c877a0aa1f3920800000000000000
+      internalID: 2972123556394617338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_6
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 29
+        width: 665
+        height: 471
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92358129b9e8d9a0800000000000000
+      internalID: -6207955104989629795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_8
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 30
+        width: 389
+        height: 456
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f961e54ce8b2c3b0800000000000000
+      internalID: -5493625270514390535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_9
+      rect:
+        serializedVersion: 2
+        x: 3785
+        y: 28
+        width: 383
+        height: 472
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba1e85c3550c12c0800000000000000
+      internalID: -4459683673648784716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_10
+      rect:
+        serializedVersion: 2
+        x: 4688
+        y: 30
+        width: 383
+        height: 470
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37220b1ee3cbb3ab0800000000000000
+      internalID: -5027217580768615821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_11
+      rect:
+        serializedVersion: 2
+        x: 5579
+        y: 26
+        width: 462
+        height: 471
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2116cb8514b0f4d60800000000000000
+      internalID: 7876526648583807250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_12
+      rect:
+        serializedVersion: 2
+        x: 6482
+        y: 27
+        width: 485
+        height: 351
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00566199a00716b90800000000000000
+      internalID: -7250390734269422336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_13
+      rect:
+        serializedVersion: 2
+        x: 7377
+        y: 26
+        width: 485
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89777f05323d99f30800000000000000
+      internalID: 4582926244461901720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_14
+      rect:
+        serializedVersion: 2
+        x: 8287
+        y: 27
+        width: 485
+        height: 351
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10545903a72c11990800000000000000
+      internalID: -7416933281245608703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_15
+      rect:
+        serializedVersion: 2
+        x: 9178
+        y: 27
+        width: 491
+        height: 351
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4de7b53b228d2130800000000000000
+      internalID: 3543631603906899276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_16
+      rect:
+        serializedVersion: 2
+        x: 10080
+        y: 28
+        width: 492
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91db91ccb393bd8f0800000000000000
+      internalID: -514754803413697255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusattack1 1_17
+      rect:
+        serializedVersion: 2
+        x: 10978
+        y: 26
+        width: 491
+        height: 345
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab0ac7f91aa12880800000000000000
+      internalID: -8637435581811782748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6e73122187b29bd4d98121c666fb2c1a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      taurusattack1 1_0: 2637619020823797045
+      taurusattack1 1_1: -8306257315694885404
+      taurusattack1 1_10: -5027217580768615821
+      taurusattack1 1_11: 7876526648583807250
+      taurusattack1 1_12: -7250390734269422336
+      taurusattack1 1_13: 4582926244461901720
+      taurusattack1 1_14: -7416933281245608703
+      taurusattack1 1_15: 3543631603906899276
+      taurusattack1 1_16: -514754803413697255
+      taurusattack1 1_17: -8637435581811782748
+      taurusattack1 1_18: -4122493775674870029
+      taurusattack1 1_19: -621142172
+      taurusattack1 1_2: -68575586604394793
+      taurusattack1 1_3: 2972123556394617338
+      taurusattack1 1_4: 8322956132059902184
+      taurusattack1 1_5: 5000881738076157303
+      taurusattack1 1_6: -6207955104989629795
+      taurusattack1 1_7: 1679961327554058111
+      taurusattack1 1_8: -5493625270514390535
+      taurusattack1 1_9: -4459683673648784716
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

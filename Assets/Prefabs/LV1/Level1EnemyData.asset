@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47794ec3c1eca634b8d0334a91b1de78, type: 3}
+  m_Name: Level1EnemyData
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnData
+  enemies:
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -0.93, y: 0.53}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 18.4, y: 0.52}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 27.51, y: -6.52}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 21.17, y: 9.48}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -1.32, y: 9.48}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 6.73, y: 9.48}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 0.5, y: 14.48}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -5.54, y: 14.48}

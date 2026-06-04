@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: e70643cb9817a5441a2f224462c358c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9128607059527103634
+    second: taurusdeath 1_0
+  - first:
+      213: 8745562422933706765
+    second: taurusdeath 1_1
+  - first:
+      213: -1856668580037174707
+    second: taurusdeath 1_2
+  - first:
+      213: 7181445119005378877
+    second: taurusdeath 1_3
+  - first:
+      213: -2317585267818665641
+    second: taurusdeath 1_4
+  - first:
+      213: 2644458426248895424
+    second: taurusdeath 1_5
+  - first:
+      213: 980461253899978743
+    second: taurusdeath 1_6
+  - first:
+      213: 5692790495937787504
+    second: taurusdeath 1_7
+  - first:
+      213: -3313368397663005589
+    second: taurusdeath 1_8
+  - first:
+      213: 5559484298067718791
+    second: taurusdeath 1_9
+  - first:
+      213: 9083195991920030335
+    second: taurusdeath 1_10
+  - first:
+      213: -1894087008687842518
+    second: taurusdeath 1_11
+  - first:
+      213: 6521750133524148251
+    second: taurusdeath 1_12
+  - first:
+      213: 7920208132584738859
+    second: taurusdeath 1_13
+  - first:
+      213: -7170904458886797112
+    second: taurusdeath 1_14
+  - first:
+      213: 8572553163190924717
+    second: taurusdeath 1_15
+  - first:
+      213: 5290099572391099156
+    second: taurusdeath 1_16
+  - first:
+      213: 3620373140978577205
+    second: taurusdeath 1_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: taurusdeath 1_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 16
+        width: 577
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b83caae3ca05180800000000000000
+      internalID: -9128607059527103634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 16
+        width: 577
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08d7fb00ba7e5970800000000000000
+      internalID: 8745562422933706765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_2
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 16
+        width: 577
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a514573c9cb36e0800000000000000
+      internalID: -1856668580037174707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_3
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 17
+        width: 577
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39474c694e99a360800000000000000
+      internalID: 7181445119005378877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_4
+      rect:
+        serializedVersion: 2
+        x: 3777
+        y: 17
+        width: 577
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7596dfe5a7846dfd0800000000000000
+      internalID: -2317585267818665641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_5
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 16
+        width: 577
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb9adf7de003b420800000000000000
+      internalID: 2644458426248895424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_6
+      rect:
+        serializedVersion: 2
+        x: 5575
+        y: 16
+        width: 582
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f70eb2d05c4b9d00800000000000000
+      internalID: 980461253899978743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_7
+      rect:
+        serializedVersion: 2
+        x: 6476
+        y: 15
+        width: 577
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076771b5bcad00f40800000000000000
+      internalID: 5692790495937787504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_8
+      rect:
+        serializedVersion: 2
+        x: 7376
+        y: 16
+        width: 578
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b649a4f4ffc8402d0800000000000000
+      internalID: -3313368397663005589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_9
+      rect:
+        serializedVersion: 2
+        x: 8271
+        y: 34
+        width: 451
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78230b08381472d40800000000000000
+      internalID: 5559484298067718791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_10
+      rect:
+        serializedVersion: 2
+        x: 9156
+        y: 34
+        width: 466
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7235ab31aefd0e70800000000000000
+      internalID: 9083195991920030335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_11
+      rect:
+        serializedVersion: 2
+        x: 10074
+        y: 34
+        width: 395
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b9a71a6e9d6b5e0800000000000000
+      internalID: -1894087008687842518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_12
+      rect:
+        serializedVersion: 2
+        x: 10969
+        y: 34
+        width: 402
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1030965139e18a50800000000000000
+      internalID: 6521750133524148251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_13
+      rect:
+        serializedVersion: 2
+        x: 11869
+        y: 35
+        width: 403
+        height: 326
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b209fd1655b3aed60800000000000000
+      internalID: 7920208132584738859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_14
+      rect:
+        serializedVersion: 2
+        x: 12771
+        y: 34
+        width: 401
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8a9c14364db7c90800000000000000
+      internalID: -7170904458886797112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_15
+      rect:
+        serializedVersion: 2
+        x: 13649
+        y: 34
+        width: 427
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5752ebea3d7f670800000000000000
+      internalID: 8572553163190924717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_16
+      rect:
+        serializedVersion: 2
+        x: 14527
+        y: 35
+        width: 467
+        height: 326
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b31de68853a6940800000000000000
+      internalID: 5290099572391099156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: taurusdeath 1_17
+      rect:
+        serializedVersion: 2
+        x: 15373
+        y: 36
+        width: 497
+        height: 333
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fa46ea0362e3230800000000000000
+      internalID: 3620373140978577205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2575e743a25536244a5f2cbe8a964fa8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      taurusdeath 1_0: -9128607059527103634
+      taurusdeath 1_1: 8745562422933706765
+      taurusdeath 1_10: 9083195991920030335
+      taurusdeath 1_11: -1894087008687842518
+      taurusdeath 1_12: 6521750133524148251
+      taurusdeath 1_13: 7920208132584738859
+      taurusdeath 1_14: -7170904458886797112
+      taurusdeath 1_15: 8572553163190924717
+      taurusdeath 1_16: 5290099572391099156
+      taurusdeath 1_17: 3620373140978577205
+      taurusdeath 1_2: -1856668580037174707
+      taurusdeath 1_3: 7181445119005378877
+      taurusdeath 1_4: -2317585267818665641
+      taurusdeath 1_5: 2644458426248895424
+      taurusdeath 1_6: 980461253899978743
+      taurusdeath 1_7: 5692790495937787504
+      taurusdeath 1_8: -3313368397663005589
+      taurusdeath 1_9: 5559484298067718791
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

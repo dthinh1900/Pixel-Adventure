@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 61928a04fa329ca418c392298965a81b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2719246446744309731
+    second: bienbao_0
+  - first:
+      213: 3621897727694162641
+    second: bienbao_1
+  - first:
+      213: -2667048531363103022
+    second: bienbao_2
+  - first:
+      213: -3989049704587514372
+    second: bienbao_3
+  - first:
+      213: -7147704074591039030
+    second: bienbao_4
+  - first:
+      213: 724122401943917539
+    second: bienbao_5
+  - first:
+      213: 7608382292173319499
+    second: bienbao_6
+  - first:
+      213: 5339880213848491714
+    second: bienbao_7
+  - first:
+      213: -4208185624519160322
+    second: bienbao_8
+  - first:
+      213: -3880321597772708282
+    second: bienbao_9
+  - first:
+      213: 8094094531128374734
+    second: bienbao_10
+  - first:
+      213: 6070206661967339167
+    second: bienbao_11
+  - first:
+      213: 3002829432361570606
+    second: bienbao_12
+  - first:
+      213: -45710976024543173
+    second: bienbao_13
+  - first:
+      213: -7637213439099194648
+    second: bienbao_14
+  - first:
+      213: 6424472513576667679
+    second: bienbao_15
+  - first:
+      213: -698610560674775365
+    second: bienbao_16
+  - first:
+      213: -6325557959234806077
+    second: bienbao_17
+  - first:
+      213: -7506942734404298176
+    second: bienbao_18
+  - first:
+      213: -2543802247563875564
+    second: bienbao_19
+  - first:
+      213: 6756143811995397023
+    second: bienbao_20
+  - first:
+      213: -7706267255816279661
+    second: bienbao_21
+  - first:
+      213: 2151028143249180215
+    second: bienbao_22
+  - first:
+      213: 598635822995461727
+    second: bienbao_23
+  - first:
+      213: 907922457076109793
+    second: bienbao_24
+  - first:
+      213: -4876007735127214288
+    second: bienbao_25
+  - first:
+      213: -4550490164230905719
+    second: bienbao_26
+  - first:
+      213: 601994943237586016
+    second: bienbao_27
+  - first:
+      213: 5471492819585058334
+    second: bienbao_28
+  - first:
+      213: 5746190702166599248
+    second: bienbao_29
+  - first:
+      213: -8770439490379663722
+    second: bienbao_30
+  - first:
+      213: 3301745001128154874
+    second: bienbao_31
+  - first:
+      213: 8149780683109438670
+    second: bienbao_32
+  - first:
+      213: -4386322734934852862
+    second: bienbao_33
+  - first:
+      213: -1552508793528612617
+    second: bienbao_34
+  - first:
+      213: 4781552818052030169
+    second: bienbao_35
+  - first:
+      213: 3297413909655080210
+    second: bienbao_36
+  - first:
+      213: 4814221286932688997
+    second: bienbao_37
+  - first:
+      213: -2067906289230089399
+    second: bienbao_38
+  - first:
+      213: -8274932164381192954
+    second: bienbao_39
+  - first:
+      213: 634920538230908234
+    second: bienbao_40
+  - first:
+      213: -6732035090096951072
+    second: bienbao_41
+  - first:
+      213: 3613051729549790768
+    second: bienbao_42
+  - first:
+      213: 5887088908090785530
+    second: bienbao_43
+  - first:
+      213: -4139815320109439671
+    second: bienbao_44
+  - first:
+      213: -6815543174834523046
+    second: bienbao_45
+  - first:
+      213: 5755459086056345144
+    second: bienbao_46
+  - first:
+      213: 6902420846261114591
+    second: bienbao_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bienbao_17
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 541
+        width: 310
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce1aa1ec8a1738a0800000000000000
+      internalID: -6325557959234806077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_21
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 541
+        width: 303
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399a8d8a2c6dd0590800000000000000
+      internalID: -7706267255816279661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_22
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 542
+        width: 307
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7364c3c13bcf9dd10800000000000000
+      internalID: 2151028143249180215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_28
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 541
+        width: 310
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16c77eeab5aeeb40800000000000000
+      internalID: 5471492819585058334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_39
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 69
+        width: 323
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dca99f909892d80800000000000000
+      internalID: -8274932164381192954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_45
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 68
+        width: 302
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5476a0c7935a61a0800000000000000
+      internalID: -6815543174834523046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_46
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 67
+        width: 313
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ecea78b8f7fdf40800000000000000
+      internalID: 5755459086056345144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bienbao_47
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 67
+        width: 308
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd615a760335acf50800000000000000
+      internalID: 6902420846261114591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 33a65d8ac951bff4bbe8ccf61f54488f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bienbao_0: 2719246446744309731
+      bienbao_1: 3621897727694162641
+      bienbao_10: 8094094531128374734
+      bienbao_11: 6070206661967339167
+      bienbao_12: 3002829432361570606
+      bienbao_13: -45710976024543173
+      bienbao_14: -7637213439099194648
+      bienbao_15: 6424472513576667679
+      bienbao_16: -698610560674775365
+      bienbao_17: -6325557959234806077
+      bienbao_18: -7506942734404298176
+      bienbao_19: -2543802247563875564
+      bienbao_2: -2667048531363103022
+      bienbao_20: 6756143811995397023
+      bienbao_21: -7706267255816279661
+      bienbao_22: 2151028143249180215
+      bienbao_23: 598635822995461727
+      bienbao_24: 907922457076109793
+      bienbao_25: -4876007735127214288
+      bienbao_26: -4550490164230905719
+      bienbao_27: 601994943237586016
+      bienbao_28: 5471492819585058334
+      bienbao_29: 5746190702166599248
+      bienbao_3: -3989049704587514372
+      bienbao_30: -8770439490379663722
+      bienbao_31: 3301745001128154874
+      bienbao_32: 8149780683109438670
+      bienbao_33: -4386322734934852862
+      bienbao_34: -1552508793528612617
+      bienbao_35: 4781552818052030169
+      bienbao_36: 3297413909655080210
+      bienbao_37: 4814221286932688997
+      bienbao_38: -2067906289230089399
+      bienbao_39: -8274932164381192954
+      bienbao_4: -7147704074591039030
+      bienbao_40: 634920538230908234
+      bienbao_41: -6732035090096951072
+      bienbao_42: 3613051729549790768
+      bienbao_43: 5887088908090785530
+      bienbao_44: -4139815320109439671
+      bienbao_45: -6815543174834523046
+      bienbao_46: 5755459086056345144
+      bienbao_47: 6902420846261114591
+      bienbao_5: 724122401943917539
+      bienbao_6: 7608382292173319499
+      bienbao_7: 5339880213848491714
+      bienbao_8: -4208185624519160322
+      bienbao_9: -3880321597772708282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

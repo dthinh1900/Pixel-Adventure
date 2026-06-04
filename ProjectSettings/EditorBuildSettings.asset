@@ -12,8 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Lever1.unity
     guid: 38c3048dc0697ee41ae1be6ccfcdc6b5
   - enabled: 1
-    path: Assets/Scenes/Lever10.unity
-    guid: 469356e07c9fe8c419e58774c443a781
+    path: Assets/Scenes/Lever2.unity
+    guid: 40259f730c58d414eb4479ce7e686ac5
+  - enabled: 1
+    path: Assets/Scenes/Lever3.unity
+    guid: cfd2837b166ece449a533c2f86fa2b03
+  - enabled: 1
+    path: Assets/Scenes/Lever4.unity
+    guid: f167e465298edd84db5f783799952214
+  - enabled: 1
+    path: Assets/Scenes/Lever5.unity
+    guid: fe08bae6330237f4ea0d1689a358b7fb
+  - enabled: 1
+    path: Assets/Scenes/Lever6.unity
+    guid: 304c4b59a679752418a868c985d27973
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: 60b8f17275470044dbc0807538545b64

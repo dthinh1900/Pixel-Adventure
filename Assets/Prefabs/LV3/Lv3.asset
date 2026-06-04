@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47794ec3c1eca634b8d0334a91b1de78, type: 3}
+  m_Name: Lv3
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnData
+  enemies:
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -5.27, y: -4.622}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 16, y: -2.64}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 22, y: 5.38}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 38, y: -7.62}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 41, y: 1.38}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 48, y: 17.37}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 22, y: 10.44}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 12, y: 8.36}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 6, y: 8.36}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -2.05, y: 13.36}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 32.3, y: 18.37}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 12.51, y: 18.37}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: 4.74, y: 18.37}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -3.86, y: 18.37}
+  - enemyPrefab: {fileID: 6971677561266634338, guid: 91c3a19e0ee853041bec06a79d3d38c8, type: 3}
+    position: {x: -6.91, y: 7.37}
