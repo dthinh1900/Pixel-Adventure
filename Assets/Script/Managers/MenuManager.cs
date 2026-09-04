@@ -14,7 +14,8 @@ public class MenuManager : MonoBehaviour
     public TextMeshProUGUI starText;
     void Start()
     {
-        
+
+
         if (!PlayerPrefs.HasKey("Level_1"))
         {
             PlayerPrefs.SetInt("Level_1", 1);

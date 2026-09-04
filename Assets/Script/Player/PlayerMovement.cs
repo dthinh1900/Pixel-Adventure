@@ -144,12 +144,7 @@ public class PlayerMovement : MonoBehaviour
         playTime += Time.deltaTime;
         UpdateAllSkillUI();
         if (isDashing) return;
-        CheckWall();       
-        WallSlide();
-        Move();
-        Jump();
-        CheckJump();
-        anim.SetBool("Grounded", isGround);
+        HandleMovement();
 
         if (Input.GetKeyDown(KeyCode.K) && dashCount > 0 && !dashSkill.isCooldown)
         {
@@ -177,7 +172,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-//=======================MOVE=============================
+
+    void HandleMovement()
+    {
+        CheckWall();
+        WallSlide();
+        Move();
+        Jump();
+        CheckJump();
+        anim.SetBool("Grounded", isGround);
+    }
+
+    //=======================MOVE=============================
     public void Move()
     {
         if (lockMove)
@@ -583,7 +589,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    //====================================================
+    //=======================CHECKPOINT,HEAL,SOUL,STAR=============================
     public void SetCheckpoint(Vector3 point)
     {
         respawnPoint = point;

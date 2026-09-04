@@ -2,7 +2,7 @@
 - Project name: Pixel Adventure
 - Unity version: Unity 6000.3.0f1
 - Active game object:
-  - Name: LV6
-  - Tag: Untagged
-  - Layer: UI
+  - Name: Player
+  - Tag: Player
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
